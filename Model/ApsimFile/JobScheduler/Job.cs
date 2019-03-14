@@ -339,7 +339,7 @@ namespace JobScheduler {
                     WriteLogMessage();
                     _P.Dispose(); _P = null;
                 };
-                //Console.WriteLine("Run: " + _P.StartInfo.FileName + " " + _P.StartInfo.Arguments + "(wd=" + WorkingDirectory + ")");
+                Console.WriteLine("Run: " + _P.StartInfo.FileName + " " + _P.StartInfo.Arguments + "(wd=" + WorkingDirectory + ")");
                 _P.Start();
                 _P.BeginOutputReadLine();
                 _P.BeginErrorReadLine();
